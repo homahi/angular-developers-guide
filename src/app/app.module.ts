@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    StyleBindingComponent
   ],
   imports: [
     BrowserModule
