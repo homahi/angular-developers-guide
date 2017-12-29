@@ -11,4 +11,8 @@ export class AppComponent {
   c = 'Hello';
   d = 'Angular!';
   e = true;
+
+  clickButton($event){
+    console.log($event);
+  }
 }
