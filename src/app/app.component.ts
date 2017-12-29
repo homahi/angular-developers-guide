@@ -12,10 +12,13 @@ export class AppComponent {
   d = 'Angular!';
   e = true;
 
-  clickButton($event){
+  clickButton($event) {
     console.log($event);
   }
 
   isDisabled = true;
   imagePath = 'http://angular.io/assets/images/logos/angular/angular.svg';
+
+  // 2-4-1
+  colspanSize = 2;
 }
