@@ -15,4 +15,7 @@ export class AppComponent {
   clickButton($event){
     console.log($event);
   }
+
+  isDisabled = true;
+  imagePath = 'http://angular.io/assets/images/logos/angular/angular.svg';
 }
