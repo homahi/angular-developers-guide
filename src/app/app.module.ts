@@ -14,6 +14,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
     ParentComponent,
     ChildComponent,
     NgStyleComponent,
-    NgForComponent
+    NgForComponent,
+    PipeComponent
   ],
   imports: [
     FormsModule,
