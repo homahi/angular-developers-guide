@@ -40,3 +40,9 @@
 <app-ng-style></app-ng-style>
 <h1>2-3-3:ngForディレクティブ</h1>
 <app-ng-for></app-ng-for>
+<h1>2-3-4:ngIfディレクティブ</h1>
+<button (click)="model1 = !model1">Click Me</button>
+<p *ngIf="model1">Hello Angular !!</p>
+<button (click)="model2=!model2">Click Me</button>
+<div *ngIf="model2; else elseCase;">Truthyケース</div>
+<ng-template #elseCase><div>Falsyケース</div></ng-template>
