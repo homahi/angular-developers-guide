@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let profile of profields">
+    <app-child [person]="profile" (selected)="showAlert($event)"></app-child>
+  </li>
+</ul>

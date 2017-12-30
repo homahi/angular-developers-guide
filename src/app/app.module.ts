@@ -10,6 +10,8 @@ import { SimpleComponent } from './simple/simple.component';
 import { UnderlineDirective } from './underline.directive';
 import { SumComponent } from './sum/sum.component';
 import { CalcService } from './calc.service';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { CalcService } from './calc.service';
     TwoWayComponent,
     SimpleComponent,
     UnderlineDirective,
-    SumComponent
+    SumComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     FormsModule,
