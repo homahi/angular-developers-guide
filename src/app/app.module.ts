@@ -8,6 +8,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SimpleComponent } from './simple/simple.component';
 import { UnderlineDirective } from './underline.directive';
+import { SumComponent } from './sum/sum.component';
+import { CalcService } from './calc.service';
 
 
 @NgModule({
@@ -17,13 +19,14 @@ import { UnderlineDirective } from './underline.directive';
     StyleBindingComponent,
     TwoWayComponent,
     SimpleComponent,
-    UnderlineDirective
+    UnderlineDirective,
+    SumComponent
   ],
   imports: [
     FormsModule,
     BrowserModule
   ],
-  providers: [],
+  providers: [CalcService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
