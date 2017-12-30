@@ -9,7 +9,7 @@ export class CounteColorDirective implements OnInit {
   constructor(private el: ElementRef) { }
 
   ngOnInit() {
-    this.el.nativeElement.style.color= this.appCounterColor;
+    this.el.nativeElement.style.color = this.appCounterColor;
   }
 }
 
