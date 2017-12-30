@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
+import { SimpleComponent } from './simple/simple.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TwoWayComponent } from './two-way/two-way.component';
     AppComponent,
     ClassBindingComponent,
     StyleBindingComponent,
-    TwoWayComponent
+    TwoWayComponent,
+    SimpleComponent
   ],
   imports: [
     FormsModule,
