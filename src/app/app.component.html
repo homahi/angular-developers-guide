@@ -45,4 +45,22 @@
 <p *ngIf="model1">Hello Angular !!</p>
 <button (click)="model2=!model2">Click Me</button>
 <div *ngIf="model2; else elseCase;">Truthyケース</div>
-<ng-template #elseCase><div>Falsyケース</div></ng-template>
+<ng-template #elseCase>
+  <div>Falsyケース</div>
+</ng-template>
+<h1>2-3-5:ngSwitchディレクティブ</h1>
+<label for="">
+<input type="radio" name="switch" value="morning" [(ngModel)]="model1">あさ
+</label>
+<label for="">
+<input type="radio" name="switch" value="noon" [(ngModel)]="model2">ひる
+</label>
+<label for="">
+<input type="radio" name="switch" value="night" [(ngModel)]="model2">よる
+</label>
+<div [ngSwitch]="model1">
+  <div *ngSwitchCase="'morning'">おはようございます</div>
+  <div *ngSwitchCase="'noon'">こんにちは</div>
+  <div *ngSwitchCase="'こんばんは'">こんばんは</div>
+  <div *ngSwitchDefault></div>
+</div>
