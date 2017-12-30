@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-for.component.css']
 })
 export class NgForComponent implements OnInit {
-  directives=[
+  directives = [
     'NgClass',
     'NgForOf',
     'NgIf',
