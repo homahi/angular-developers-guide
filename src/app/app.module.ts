@@ -13,6 +13,7 @@ import { CalcService } from './calc.service';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     SumComponent,
     ParentComponent,
     ChildComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgForComponent
   ],
   imports: [
     FormsModule,
