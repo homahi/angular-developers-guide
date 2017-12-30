@@ -31,8 +31,10 @@
 <app-sum></app-sum>
 <h1>2-2-4:親子の受け渡し</h1>
 <app-parent></app-parent>
-<h1>2-2-5:ngClassDirective</h1>
+<h1>2-3-1:ngClassディレクティブ</h1>
 <button [ngClass]="'btn btn-default'">ngClass Sample1</button>
 <button [ngClass]="['btn','btn-info']">ngClass Sample2</button>
 <button [ngClass]="{'btn btn-default': sample3}" (click)="sample3 = !sample3">ngClass Sample3</button>
 <button class="btn" [ngClass]="{'btn-default': !sample4, 'btn-info':sample4}" (click)="sample4 = !sample4">ngClass Sample4</button>
+<h1>2-3-2:ngStyleディレクティブ</h1>
+<app-ng-style></app-ng-style>

@@ -12,6 +12,7 @@ import { SumComponent } from './sum/sum.component';
 import { CalcService } from './calc.service';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ChildComponent } from './child/child.component';
     UnderlineDirective,
     SumComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    NgStyleComponent
   ],
   imports: [
     FormsModule,
