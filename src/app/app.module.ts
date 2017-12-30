@@ -17,7 +17,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { SelectorMyAppComponent } from './selector-my-app/selector-my-app.component';
 import { SelectorComponent } from './selector-my-app/selector-my-app.component';
-import { InputsComponentComponent } from './inputs-component/inputs-component.component';
+import { InputsComponent } from './inputs/inputs.component';
+import {CounterComponent} from './inputs/inputs.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InputsComponentComponent } from './inputs-component/inputs-component.co
     PipeComponent,
     SelectorMyAppComponent,
     SelectorComponent,
-    InputsComponentComponent
+    InputsComponent,
+    CounterComponent
   ],
   imports: [
     FormsModule,
