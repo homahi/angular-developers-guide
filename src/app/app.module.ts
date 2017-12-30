@@ -18,7 +18,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { SelectorMyAppComponent } from './selector-my-app/selector-my-app.component';
 import { SelectorComponent } from './selector-my-app/selector-my-app.component';
 import { InputsComponent } from './inputs/inputs.component';
-import {CounterComponent} from './inputs/inputs.component';
+import { CounteColorDirective, CounterComponent } from './inputs/inputs.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import {CounterComponent} from './inputs/inputs.component';
     SelectorMyAppComponent,
     SelectorComponent,
     InputsComponent,
-    CounterComponent
+    CounterComponent,
+    CounteColorDirective
   ],
   imports: [
     FormsModule,

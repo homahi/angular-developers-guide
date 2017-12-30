@@ -1,4 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { ElementRef, Directive, Component, OnInit } from '@angular/core';
+
+@Directive({
+  selector: '[appCounterColor]',
+  inputs: ['appCounterColor']
+})
+export class CounteColorDirective implements OnInit {
+  appCounterColor: string;
+  constructor(private el: ElementRef) { }
+
+  ngOnInit() {
+    this.el.nativeElement.style.color= this.appCounterColor;
+  }
+}
 
 @Component({
   selector: 'app-inputs-counter',
