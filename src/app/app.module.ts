@@ -15,7 +15,9 @@ import { ChildComponent } from './child/child.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { PipeComponent } from './pipe/pipe.component';
-
+import { SelectorMyAppComponent } from './selector-my-app/selector-my-app.component';
+import { SelectorComponent } from './selector-my-app/selector-my-app.component';
+import { InputsComponentComponent } from './inputs-component/inputs-component.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { PipeComponent } from './pipe/pipe.component';
     ChildComponent,
     NgStyleComponent,
     NgForComponent,
-    PipeComponent
+    PipeComponent,
+    SelectorMyAppComponent,
+    SelectorComponent,
+    InputsComponentComponent
   ],
   imports: [
     FormsModule,
