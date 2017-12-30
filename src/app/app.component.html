@@ -53,14 +53,14 @@
 <input type="radio" name="switch" value="morning" [(ngModel)]="model1">あさ
 </label>
 <label for="">
-<input type="radio" name="switch" value="noon" [(ngModel)]="model2">ひる
+<input type="radio" name="switch" value="noon" [(ngModel)]="model1">ひる
 </label>
 <label for="">
-<input type="radio" name="switch" value="night" [(ngModel)]="model2">よる
+<input type="radio" name="switch" value="night" [(ngModel)]="model1">よる
 </label>
 <div [ngSwitch]="model1">
   <div *ngSwitchCase="'morning'">おはようございます</div>
   <div *ngSwitchCase="'noon'">こんにちは</div>
-  <div *ngSwitchCase="'こんばんは'">こんばんは</div>
+  <div *ngSwitchCase="'night'">こんばんは</div>
   <div *ngSwitchDefault></div>
 </div>
