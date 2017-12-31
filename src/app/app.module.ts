@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {SampleService} from './sample.service';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { OutputsCounterComponent, OutputsComponent } from './outputs/outputs.com
 import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host.component';
 import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-as.component';
 import { ProvidersComponent } from './providers/providers.component';
+import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponent,ViewProvidersComponent } from './view-providers/view-providers.component';
 
 
 @NgModule({
@@ -51,14 +53,17 @@ import { ProvidersComponent } from './providers/providers.component';
     ResizeComponent,
     ExportAsComponent,
     ExportAsCounterComponent,
-    ProvidersComponent
-
+    ProvidersComponent,
+    ViewProvidersComponent,
+    ViewProvidersContainerComponent,
+    ViewChildComponent,
+    ContentChildComponent
   ],
   imports: [
     FormsModule,
     BrowserModule
   ],
-  providers: [CalcService],
+  providers: [CalcService,SampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
