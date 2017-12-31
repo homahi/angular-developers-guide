@@ -25,6 +25,7 @@ import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host
 import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-as.component';
 import { ProvidersComponent } from './providers/providers.component';
 import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponent,ViewProvidersComponent } from './view-providers/view-providers.component';
+import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
 
 
 @NgModule({
@@ -57,7 +58,9 @@ import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponen
     ViewProvidersComponent,
     ViewProvidersContainerComponent,
     ViewChildComponent,
-    ContentChildComponent
+    ContentChildComponent,
+    ChangeDetectionOnPushComponent,
+    ChangeDetectionOnPushChildComponent
   ],
   imports: [
     FormsModule,
