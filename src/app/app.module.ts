@@ -21,6 +21,7 @@ import { InputsComponent } from './inputs/inputs.component';
 import { CounteColorDirective, CounterComponent } from './inputs/inputs.component';
 import { OutputsCounterComponent, OutputsComponent } from './outputs/outputs.component';
 import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host.component';
+import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-as.component';
 
 
 @NgModule({
@@ -46,7 +47,9 @@ import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host
     OutputsCounterComponent,
     HostComponent,
     ToggleColorComponent,
-    ResizeComponent
+    ResizeComponent,
+    ExportAsComponent,
+    ExportAsCounterComponent
 
   ],
   imports: [
