@@ -22,6 +22,7 @@ import { CounteColorDirective, CounterComponent } from './inputs/inputs.componen
 import { OutputsCounterComponent, OutputsComponent } from './outputs/outputs.component';
 import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host.component';
 import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-as.component';
+import { ProvidersComponent } from './providers/providers.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-a
     ToggleColorComponent,
     ResizeComponent,
     ExportAsComponent,
-    ExportAsCounterComponent
+    ExportAsCounterComponent,
+    ProvidersComponent
 
   ],
   imports: [
