@@ -20,7 +20,8 @@ import { SelectorComponent } from './selector-my-app/selector-my-app.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { CounteColorDirective, CounterComponent } from './inputs/inputs.component';
 import { OutputsCounterComponent, OutputsComponent } from './outputs/outputs.component';
-import { ToggleColorComponent, HostComponent } from './host/host.component';
+import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host.component';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { ToggleColorComponent, HostComponent } from './host/host.component';
     OutputsComponent,
     OutputsCounterComponent,
     HostComponent,
-    ToggleColorComponent
+    ToggleColorComponent,
+    ResizeComponent
+
   ],
   imports: [
     FormsModule,
