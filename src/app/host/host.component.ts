@@ -33,7 +33,8 @@ export class ResizeComponent implements OnInit{
   host: {
     '(click)': 'onClick($event)',
     '[class.red]': 'isRed',
-    '[class.blue]': 'isBlue'
+    '[class.blue]': 'isBlue',
+    'role': 'button'
   },
   template: '<div>Toggle color</div>'
 })
