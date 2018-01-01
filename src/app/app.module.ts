@@ -31,6 +31,7 @@ import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComp
 import { TemplateComponent } from './template/template.component';
 import { StyleComponent } from './style/style.component';
 import { AnimationComponent } from './animation/animation.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 
 @NgModule({
@@ -73,6 +74,7 @@ import { AnimationComponent } from './animation/animation.component';
     TemplateComponent,
     StyleComponent,
     AnimationComponent,
+    InterpolationComponent,
   ],
   imports: [
     FormsModule,
