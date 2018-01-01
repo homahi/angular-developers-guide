@@ -28,6 +28,7 @@ import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponen
 import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
 import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComponent,QueriesComponent } from './queries/queries.component';
 import { TemplateComponent } from './template/template.component';
+import { StyleComponent } from './style/style.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { TemplateComponent } from './template/template.component';
     QueriesChildComponent,
     QueriesContentChildComponent,
     TemplateComponent,
+    StyleComponent,
   ],
   imports: [
     FormsModule,
