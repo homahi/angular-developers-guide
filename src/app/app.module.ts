@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {SampleService} from './sample.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } fr
 import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComponent,QueriesComponent } from './queries/queries.component';
 import { TemplateComponent } from './template/template.component';
 import { StyleComponent } from './style/style.component';
+import { AnimationComponent } from './animation/animation.component';
 
 
 @NgModule({
@@ -70,10 +72,12 @@ import { StyleComponent } from './style/style.component';
     QueriesContentChildComponent,
     TemplateComponent,
     StyleComponent,
+    AnimationComponent,
   ],
   imports: [
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [CalcService,SampleService],
   bootstrap: [AppComponent]
