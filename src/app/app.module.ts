@@ -26,6 +26,7 @@ import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-a
 import { ProvidersComponent } from './providers/providers.component';
 import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponent,ViewProvidersComponent } from './view-providers/view-providers.component';
 import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
+import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComponent,QueriesComponent } from './queries/queries.component';
 
 
 @NgModule({
@@ -60,7 +61,11 @@ import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } fr
     ViewChildComponent,
     ContentChildComponent,
     ChangeDetectionOnPushComponent,
-    ChangeDetectionOnPushChildComponent
+    ChangeDetectionOnPushChildComponent,
+    QueriesComponent,
+    QueriesViewChildComponent,
+    QueriesChildComponent,
+    QueriesContentChildComponent,
   ],
   imports: [
     FormsModule,
