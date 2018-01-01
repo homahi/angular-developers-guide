@@ -27,6 +27,7 @@ import { ProvidersComponent } from './providers/providers.component';
 import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponent,ViewProvidersComponent } from './view-providers/view-providers.component';
 import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
 import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComponent,QueriesComponent } from './queries/queries.component';
+import { TemplateComponent } from './template/template.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComp
     QueriesViewChildComponent,
     QueriesChildComponent,
     QueriesContentChildComponent,
+    TemplateComponent,
   ],
   imports: [
     FormsModule,
