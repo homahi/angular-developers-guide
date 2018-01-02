@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {SampleService} from './sample.service';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SampleService } from './sample.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -22,15 +22,16 @@ import { SelectorComponent } from './selector-my-app/selector-my-app.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { CounteColorDirective, CounterComponent } from './inputs/inputs.component';
 import { OutputsCounterComponent, OutputsComponent } from './outputs/outputs.component';
-import { ResizeComponent,ToggleColorComponent, HostComponent } from './host/host.component';
-import { ExportAsCounterComponent,ExportAsComponent } from './export-as/export-as.component';
+import { ResizeComponent, ToggleColorComponent, HostComponent } from './host/host.component';
+import { ExportAsCounterComponent, ExportAsComponent } from './export-as/export-as.component';
 import { ProvidersComponent } from './providers/providers.component';
-import { ViewProvidersContainerComponent,ContentChildComponent,ViewChildComponent,ViewProvidersComponent } from './view-providers/view-providers.component';
-import { ChangeDetectionOnPushChildComponent,ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
-import { QueriesViewChildComponent,QueriesChildComponent,QueriesContentChildComponent,QueriesComponent } from './queries/queries.component';
+import { ViewProvidersContainerComponent, ContentChildComponent, ViewChildComponent, ViewProvidersComponent } from './view-providers/view-providers.component';
+import { ChangeDetectionOnPushChildComponent, ChangeDetectionOnPushComponent } from './change-detection-on-push/change-detection-on-push.component';
+import { QueriesViewChildComponent, QueriesChildComponent, QueriesContentChildComponent, QueriesComponent } from './queries/queries.component';
 import { TemplateComponent } from './template/template.component';
 import { StyleComponent } from './style/style.component';
 import { AnimationComponent } from './animation/animation.component';
+import { InputCounterComponent, CounterContainerComponent } from './counter-container/counter-container.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 
 
@@ -74,14 +75,16 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     TemplateComponent,
     StyleComponent,
     AnimationComponent,
-    InterpolationComponent,
+    InputCounterComponent,
+    CounterContainerComponent,
+    InterpolationComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
-  providers: [CalcService,SampleService],
+  providers: [CalcService, SampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
