@@ -41,6 +41,7 @@ import { State2Component } from './state2/state2.component';
 import { Transition2Component } from './transition2/transition2.component';
 import { Transition3Component } from './transition3/transition3.component';
 import { AnimationStyleComponent } from './animation-style/animation-style.component';
+import { Style2Component } from './style2/style2.component';
 
 
 @NgModule({
@@ -95,7 +96,8 @@ import { AnimationStyleComponent } from './animation-style/animation-style.compo
     State2Component,
     Transition2Component,
     Transition3Component,
-    AnimationStyleComponent
+    AnimationStyleComponent,
+    Style2Component
   ],
   imports: [
     FormsModule,
