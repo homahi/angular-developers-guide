@@ -36,6 +36,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { CounterContainerWithSetterComponent, CounterWithSetterComponent } from './counter-with-setter/counter-with-setter.component';
 import { HostDecoratorChildComponent,HostDecoratorComponent } from './host-decorator/host-decorator.component';
 import { TransitionComponent } from './transition/transition.component';
+import { StateComponent } from './state/state.component';
+import { State2Component } from './state2/state2.component';
 
 
 @NgModule({
@@ -85,7 +87,9 @@ import { TransitionComponent } from './transition/transition.component';
     CounterContainerWithSetterComponent,
     HostDecoratorComponent,
     HostDecoratorChildComponent,
-    TransitionComponent
+    TransitionComponent,
+    StateComponent,
+    State2Component
   ],
   imports: [
     FormsModule,
