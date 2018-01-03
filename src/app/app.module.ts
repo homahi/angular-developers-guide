@@ -39,6 +39,7 @@ import { TransitionComponent } from './transition/transition.component';
 import { StateComponent } from './state/state.component';
 import { State2Component } from './state2/state2.component';
 import { Transition2Component } from './transition2/transition2.component';
+import { Transition3Component } from './transition3/transition3.component';
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { Transition2Component } from './transition2/transition2.component';
     TransitionComponent,
     StateComponent,
     State2Component,
-    Transition2Component
+    Transition2Component,
+    Transition3Component
   ],
   imports: [
     FormsModule,
