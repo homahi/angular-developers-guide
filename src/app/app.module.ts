@@ -38,6 +38,7 @@ import { HostDecoratorChildComponent,HostDecoratorComponent } from './host-decor
 import { TransitionComponent } from './transition/transition.component';
 import { StateComponent } from './state/state.component';
 import { State2Component } from './state2/state2.component';
+import { Transition2Component } from './transition2/transition2.component';
 
 
 @NgModule({
@@ -89,7 +90,8 @@ import { State2Component } from './state2/state2.component';
     HostDecoratorChildComponent,
     TransitionComponent,
     StateComponent,
-    State2Component
+    State2Component,
+    Transition2Component
   ],
   imports: [
     FormsModule,
