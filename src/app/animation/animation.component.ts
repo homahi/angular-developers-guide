@@ -7,8 +7,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./animation.component.css'],
   animations: [
     trigger('myTrigger', [
-      state('on', style({'opacity': 1})),
-      state('off', style({'opacity': 1})),
+      state('from', style({'opacity': 0})),
+      state('to', style({'opacity': 1})),
       transition('on => off', [
         animate('1s')
       ]),
