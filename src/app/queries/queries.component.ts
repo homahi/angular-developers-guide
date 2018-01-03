@@ -27,19 +27,19 @@ export class QueriesContentChildComponent { }
   }
 })
 export class QueriesChildComponent implements AfterContentInit, AfterViewInit {
-    viewChild: ViewChild;
-    viewChildren: ViewChildren;
-    contentChild: ContentChild;
-    contentChildren: ContentChildren;
+  viewChild: ViewChild;
+  viewChildren: ViewChildren;
+  contentChild: ContentChild;
+  contentChildren: ContentChildren;
 
   ngAfterContentInit() {
     console.log(`Query content child: ${this.contentChild}`);
     console.log(`Query content children: ${this.contentChildren}`);
-    }
+  }
   ngAfterViewInit() {
     console.log(`Query view child: ${this.viewChild}`);
     console.log(`Query view children: ${this.viewChildren}`);
-    }
+  }
 }
 
 @Component({
