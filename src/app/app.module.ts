@@ -33,7 +33,8 @@ import { StyleComponent } from './style/style.component';
 import { AnimationComponent } from './animation/animation.component';
 import { InputCounterComponent, CounterContainerComponent } from './counter-container/counter-container.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
-import { CounterContainerWithSetterComponent,CounterWithSetterComponent } from './counter-with-setter/counter-with-setter.component';
+import { CounterContainerWithSetterComponent, CounterWithSetterComponent } from './counter-with-setter/counter-with-setter.component';
+import { HostDecoratorChildComponent,HostDecoratorComponent } from './host-decorator/host-decorator.component';
 
 
 @NgModule({
@@ -80,7 +81,9 @@ import { CounterContainerWithSetterComponent,CounterWithSetterComponent } from '
     CounterContainerComponent,
     InterpolationComponent,
     CounterWithSetterComponent,
-    CounterContainerWithSetterComponent
+    CounterContainerWithSetterComponent,
+    HostDecoratorComponent,
+    HostDecoratorChildComponent
   ],
   imports: [
     FormsModule,
