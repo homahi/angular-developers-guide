@@ -33,6 +33,7 @@ import { StyleComponent } from './style/style.component';
 import { AnimationComponent } from './animation/animation.component';
 import { InputCounterComponent, CounterContainerComponent } from './counter-container/counter-container.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { CounterContainerWithSetterComponent,CounterWithSetterComponent } from './counter-with-setter/counter-with-setter.component';
 
 
 @NgModule({
@@ -77,7 +78,9 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     AnimationComponent,
     InputCounterComponent,
     CounterContainerComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    CounterWithSetterComponent,
+    CounterContainerWithSetterComponent
   ],
   imports: [
     FormsModule,
