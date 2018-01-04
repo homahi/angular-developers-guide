@@ -48,6 +48,7 @@ import { KeyframesComponent } from './keyframes/keyframes.component';
 import { GroupComponent } from './group/group.component';
 import { SequenceComponent } from './sequence/sequence.component';
 import { QueryComponent } from './query/query.component';
+import { StaggerComponent } from './stagger/stagger.component';
 
 
 @NgModule({
@@ -109,7 +110,8 @@ import { QueryComponent } from './query/query.component';
     KeyframesComponent,
     GroupComponent,
     SequenceComponent,
-    QueryComponent
+    QueryComponent,
+    StaggerComponent
   ],
   imports: [
     FormsModule,
