@@ -51,6 +51,7 @@ import { QueryComponent } from './query/query.component';
 import { StaggerComponent } from './stagger/stagger.component';
 import { AnimateChildComponent } from './animate-child/animate-child.component';
 import { UseAnimationComponent } from './use-animation/use-animation.component';
+import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated/view-encapsulation-emulated.component';
 
 
 @NgModule({
@@ -115,7 +116,8 @@ import { UseAnimationComponent } from './use-animation/use-animation.component';
     QueryComponent,
     StaggerComponent,
     AnimateChildComponent,
-    UseAnimationComponent
+    UseAnimationComponent,
+    ViewEncapsulationEmulatedComponent
   ],
   imports: [
     FormsModule,
