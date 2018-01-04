@@ -49,6 +49,7 @@ import { GroupComponent } from './group/group.component';
 import { SequenceComponent } from './sequence/sequence.component';
 import { QueryComponent } from './query/query.component';
 import { StaggerComponent } from './stagger/stagger.component';
+import { AnimateChildComponent } from './animate-child/animate-child.component';
 
 
 @NgModule({
@@ -111,7 +112,8 @@ import { StaggerComponent } from './stagger/stagger.component';
     GroupComponent,
     SequenceComponent,
     QueryComponent,
-    StaggerComponent
+    StaggerComponent,
+    AnimateChildComponent
   ],
   imports: [
     FormsModule,

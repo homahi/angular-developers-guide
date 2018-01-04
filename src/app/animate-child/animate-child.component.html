@@ -1,0 +1,7 @@
+<div>
+  <h2>{{title}}</h2>
+  <div class="elem" [@myTrigger]="animState">
+    <div class="child" [@myChildTrigger]="animState"></div>
+  </div>
+  <button (click)="click()">Animate</button>
+</div>
