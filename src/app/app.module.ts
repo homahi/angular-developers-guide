@@ -52,6 +52,7 @@ import { StaggerComponent } from './stagger/stagger.component';
 import { AnimateChildComponent } from './animate-child/animate-child.component';
 import { UseAnimationComponent } from './use-animation/use-animation.component';
 import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated/view-encapsulation-emulated.component';
+import { HostSelectorComponent } from './host-selector/host-selector.component';
 
 
 @NgModule({
@@ -117,7 +118,8 @@ import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulate
     StaggerComponent,
     AnimateChildComponent,
     UseAnimationComponent,
-    ViewEncapsulationEmulatedComponent
+    ViewEncapsulationEmulatedComponent,
+    HostSelectorComponent
   ],
   imports: [
     FormsModule,

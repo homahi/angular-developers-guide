@@ -1,0 +1,8 @@
+:host(.active) {
+  display: block;
+  background-color: red;
+}
+:host-context(.child) h1{
+  display: block;
+  background-color: blue;
+}
