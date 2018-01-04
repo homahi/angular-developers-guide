@@ -45,6 +45,7 @@ import { Style2Component } from './style2/style2.component';
 import { AnimateComponent } from './animate/animate.component';
 import { Animate2Component } from './animate2/animate2.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
+import { GroupComponent } from './group/group.component';
 
 
 @NgModule({
@@ -103,7 +104,8 @@ import { KeyframesComponent } from './keyframes/keyframes.component';
     Style2Component,
     AnimateComponent,
     Animate2Component,
-    KeyframesComponent
+    KeyframesComponent,
+    GroupComponent
   ],
   imports: [
     FormsModule,
