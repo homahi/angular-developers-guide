@@ -47,6 +47,7 @@ import { Animate2Component } from './animate2/animate2.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { GroupComponent } from './group/group.component';
 import { SequenceComponent } from './sequence/sequence.component';
+import { QueryComponent } from './query/query.component';
 
 
 @NgModule({
@@ -107,7 +108,8 @@ import { SequenceComponent } from './sequence/sequence.component';
     Animate2Component,
     KeyframesComponent,
     GroupComponent,
-    SequenceComponent
+    SequenceComponent,
+    QueryComponent
   ],
   imports: [
     FormsModule,
