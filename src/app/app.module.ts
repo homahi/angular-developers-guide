@@ -50,6 +50,7 @@ import { SequenceComponent } from './sequence/sequence.component';
 import { QueryComponent } from './query/query.component';
 import { StaggerComponent } from './stagger/stagger.component';
 import { AnimateChildComponent } from './animate-child/animate-child.component';
+import { UseAnimationComponent } from './use-animation/use-animation.component';
 
 
 @NgModule({
@@ -113,7 +114,8 @@ import { AnimateChildComponent } from './animate-child/animate-child.component';
     SequenceComponent,
     QueryComponent,
     StaggerComponent,
-    AnimateChildComponent
+    AnimateChildComponent,
+    UseAnimationComponent
   ],
   imports: [
     FormsModule,
