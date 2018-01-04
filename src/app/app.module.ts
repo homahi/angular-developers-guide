@@ -43,6 +43,7 @@ import { Transition3Component } from './transition3/transition3.component';
 import { AnimationStyleComponent } from './animation-style/animation-style.component';
 import { Style2Component } from './style2/style2.component';
 import { AnimateComponent } from './animate/animate.component';
+import { Animate2Component } from './animate2/animate2.component';
 
 
 @NgModule({
@@ -99,7 +100,8 @@ import { AnimateComponent } from './animate/animate.component';
     Transition3Component,
     AnimationStyleComponent,
     Style2Component,
-    AnimateComponent
+    AnimateComponent,
+    Animate2Component
   ],
   imports: [
     FormsModule,
