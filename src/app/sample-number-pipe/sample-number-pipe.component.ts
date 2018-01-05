@@ -13,6 +13,14 @@ export class SampleNumberPipeComponent implements OnInit {
   public date: Date = new Date('2014-04-01');
   a = 0.2577711;
   b = 100.34959999;
+  data: any = {
+    'Kanto': [
+      {
+        'name': '東京都',
+        'Population': 12369185
+      }
+    ]
+  }
 
   constructor() { }
 
