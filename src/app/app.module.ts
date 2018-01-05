@@ -6,6 +6,10 @@ import { UseValueService, useValueServie } from './use-value.service';
 import { DummyService } from './dummy.service';
 import { UseExistingService } from './use-existing.service';
 import { USE_VALUE_CONST } from './use-value-const';
+import { SimpleDiService } from './simple-di.service';
+import { UseFactoryService } from './use-factory.service';
+import { useFactoryFn } from './use-factory-fn';
+import {UseExistingDiComponent} from './use-existing-di/use-existing-di.component';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -58,7 +62,6 @@ import { UseAnimationComponent } from './use-animation/use-animation.component';
 import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated/view-encapsulation-emulated.component';
 import { HostSelectorComponent } from './host-selector/host-selector.component';
 import { SimpleDiComponent } from './simple-di/simple-di.component';
-import { UseExistingDiComponent } from './use-existing-di/use-existing-di.component';
 
 
 @NgModule({
@@ -139,7 +142,12 @@ import { UseExistingDiComponent } from './use-existing-di/use-existing-di.compon
       provide: UseValueService, useValue: useValueServie
     },
     UseExistingService,
-    { provide: DummyService, useExisting: UseExistingService }
+    { provide: DummyService, useExisting: UseExistingService },
+    DummyService,
+    SimpleDiService,
+    {
+      provide: UseFactoryService, useFactory: useFactoryFn, deps: [SimpleDiService, DummyService]
+    }
   ],
   bootstrap: [AppComponent]
 })
