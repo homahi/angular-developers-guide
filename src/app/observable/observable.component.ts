@@ -34,6 +34,8 @@ export class ObservableComponent implements OnInit {
       }
     });
 
+
+    // Subjectを利用
     const subject = new Rx.Subject();
 
     subject.subscribe({
@@ -43,6 +45,25 @@ export class ObservableComponent implements OnInit {
     });
     subject.next('Angular');
     subject.next('デベロッパーズガイド');
-  }
 
+    // Promise
+    const promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('Angular');
+      }, 1000);
+    });
+
+    const promiseOb = Rx.Observable.fromPromise(promise);
+    promiseOb.subscribe({
+      next: (x) => {
+        console.log(x);
+      }
+    });
+
+    // toPromise
+    const promiseFromObservable = Rx.Observable.of('Angular').toPromise();
+    promise.then((x) => {
+      console.log(x);
+    })
+  }
 }
