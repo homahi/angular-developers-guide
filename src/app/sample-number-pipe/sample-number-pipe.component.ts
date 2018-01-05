@@ -17,7 +17,19 @@ export class SampleNumberPipeComponent implements OnInit {
     'Kanto': [
       {
         'name': '東京都',
-        'Population': 12369185
+        'population': 12369185
+      },
+      {
+        'name': '神奈川県',
+        'population': 8687422
+      },
+      {
+        'name': '埼玉県',
+        'population': 7037849
+      },
+      {
+        'name': '千葉県',
+        'population': 6028315
       }
     ]
   }
