@@ -62,6 +62,7 @@ import { UseAnimationComponent } from './use-animation/use-animation.component';
 import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated/view-encapsulation-emulated.component';
 import { HostSelectorComponent } from './host-selector/host-selector.component';
 import { SimpleDiComponent } from './simple-di/simple-di.component';
+import { ObservableComponent } from './observable/observable.component';
 
 
 @NgModule({
@@ -130,7 +131,8 @@ import { SimpleDiComponent } from './simple-di/simple-di.component';
     ViewEncapsulationEmulatedComponent,
     HostSelectorComponent,
     SimpleDiComponent,
-    UseExistingDiComponent
+    UseExistingDiComponent,
+    ObservableComponent
   ],
   imports: [
     FormsModule,
