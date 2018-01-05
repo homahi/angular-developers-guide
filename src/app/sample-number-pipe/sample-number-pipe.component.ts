@@ -11,6 +11,8 @@ export class SampleNumberPipeComponent implements OnInit {
   public euro = 0;
   public str: string = ';'
   public date: Date = new Date('2014-04-01');
+  a = 0.2577711;
+  b = 100.34959999;
 
   constructor() { }
 
