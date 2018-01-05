@@ -66,6 +66,7 @@ import { SimpleDiComponent } from './simple-di/simple-di.component';
 import { ObservableComponent } from './observable/observable.component';
 import { JsonpSampleComponent } from './jsonp-sample/jsonp-sample.component';
 import { HttpFilterSampleComponent } from './http-filter-sample/http-filter-sample.component';
+import { SampleNumberPipeComponent } from './sample-number-pipe/sample-number-pipe.component';
 
 
 @NgModule({
@@ -137,7 +138,8 @@ import { HttpFilterSampleComponent } from './http-filter-sample/http-filter-samp
     UseExistingDiComponent,
     ObservableComponent,
     JsonpSampleComponent,
-    HttpFilterSampleComponent
+    HttpFilterSampleComponent,
+    SampleNumberPipeComponent
   ],
   imports: [
     FormsModule,
