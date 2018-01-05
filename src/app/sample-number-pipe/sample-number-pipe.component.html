@@ -33,4 +33,7 @@
 <h2>i18n</h2>
 <p>{{cats.length | i18nPlural: catMapping}}</p>
 <p>{{ lang | i18nSelect: langMap }}</p>
-
+<h2>パイプの複数利用</h2>
+<p>{{timeObservable | async | date:'jms'}}</p>
+<h2>独自パイプ</h2>
+<p>{{original| kana}}</p>

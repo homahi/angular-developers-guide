@@ -7,6 +7,8 @@ import { Observer } from 'rxjs/Observer';
   styleUrls: ['./sample-number-pipe.component.css']
 })
 export class SampleNumberPipeComponent implements OnInit {
+  original = 'パイプ';
+  timeObservable: Observable<string>;
   cats: string[] = ['三毛猫'];
   lang = 'ja';
   catMapping: { [k: string]: string } = { '=0': '0 cats.', '=1': 'One cat.', 'other': '# cats.' };
@@ -42,6 +44,9 @@ export class SampleNumberPipeComponent implements OnInit {
   }
 
   constructor() {
+    this.timeObservable = new Observable<string>((observer: Observer<string>) => {
+      setInterval(() => observer.next(new Date().toString()), 1000);
+    });
     this.countObservable = new Observable<number>((observer: Observer<number>) => {
       this.i = 0;
       setInterval(() => observer.next(this.i++), 1000);

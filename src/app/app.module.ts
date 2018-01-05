@@ -67,6 +67,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { JsonpSampleComponent } from './jsonp-sample/jsonp-sample.component';
 import { HttpFilterSampleComponent } from './http-filter-sample/http-filter-sample.component';
 import { SampleNumberPipeComponent } from './sample-number-pipe/sample-number-pipe.component';
+import { KanaPipe } from './kana.pipe';
 
 
 @NgModule({
@@ -139,7 +140,8 @@ import { SampleNumberPipeComponent } from './sample-number-pipe/sample-number-pi
     ObservableComponent,
     JsonpSampleComponent,
     HttpFilterSampleComponent,
-    SampleNumberPipeComponent
+    SampleNumberPipeComponent,
+    KanaPipe
   ],
   imports: [
     FormsModule,
