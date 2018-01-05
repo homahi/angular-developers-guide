@@ -9,4 +9,4 @@ export class UseValueService {
   get name(): string { return this._name; }
 
 }
-export const useValueService = new UseValueService(50, 'useValue');
+export const useValueServie = new UseValueService(50, 'useValue');

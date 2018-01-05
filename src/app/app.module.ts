@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SampleService } from './sample.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UseValueService, useValueServie } from './use-value.service';
+import { DummyService } from './dummy.service';
+import { UseExistingService } from './use-existing.service';
+import { USE_VALUE_CONST } from './use-value-const';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -34,7 +38,7 @@ import { AnimationComponent } from './animation/animation.component';
 import { InputCounterComponent, CounterContainerComponent } from './counter-container/counter-container.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { CounterContainerWithSetterComponent, CounterWithSetterComponent } from './counter-with-setter/counter-with-setter.component';
-import { HostDecoratorChildComponent,HostDecoratorComponent } from './host-decorator/host-decorator.component';
+import { HostDecoratorChildComponent, HostDecoratorComponent } from './host-decorator/host-decorator.component';
 import { TransitionComponent } from './transition/transition.component';
 import { StateComponent } from './state/state.component';
 import { State2Component } from './state2/state2.component';
@@ -54,6 +58,7 @@ import { UseAnimationComponent } from './use-animation/use-animation.component';
 import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated/view-encapsulation-emulated.component';
 import { HostSelectorComponent } from './host-selector/host-selector.component';
 import { SimpleDiComponent } from './simple-di/simple-di.component';
+import { UseExistingDiComponent } from './use-existing-di/use-existing-di.component';
 
 
 @NgModule({
@@ -121,14 +126,21 @@ import { SimpleDiComponent } from './simple-di/simple-di.component';
     UseAnimationComponent,
     ViewEncapsulationEmulatedComponent,
     HostSelectorComponent,
-    SimpleDiComponent
+    SimpleDiComponent,
+    UseExistingDiComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
-  providers: [CalcService, SampleService],
+  providers: [CalcService, SampleService,
+    {
+      provide: UseValueService, useValue: useValueServie
+    },
+    UseExistingService,
+    { provide: DummyService, useExisting: UseExistingService }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
