@@ -10,6 +10,7 @@ export class SampleNumberPipeComponent implements OnInit {
   e: number = 2.718281828459045;
   public euro = 0;
   public str: string = ';'
+  public date: Date = new Date('2014-04-01');
 
   constructor() { }
 
