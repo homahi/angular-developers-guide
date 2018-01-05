@@ -7,13 +7,17 @@ import { Observer } from 'rxjs/Observer';
   styleUrls: ['./sample-number-pipe.component.css']
 })
 export class SampleNumberPipeComponent implements OnInit {
+  cats: string[] = ['三毛猫'];
+  lang = 'ja';
+  catMapping: { [k: string]: string } = { '=0': '0 cats.', '=1': 'One cat.', 'other': '# cats.' };
+  langMap: any = { 'fi': 'Kissa', 'ja': '猫', 'other': 'Cat' }
   countObservable: Observable<number>;
   i = 0;
   pi: number = 3.141;
   e: number = 2.718281828459045;
-  public euro = 0;
-  public str: string = ';'
-  public date: Date = new Date('2014-04-01');
+  euro = 0;
+  str: string = ';'
+  date: Date = new Date('2014-04-01');
   a = 0.2577711;
   b = 100.34959999;
   data: any = {

@@ -28,4 +28,9 @@
 <ul>
   <li *ngFor="let prefecture of data.Kanto | slice:0:3">{{prefecture.name}} - {{prefecture.population}}</li>
 </ul>
+<h2>async</h2>
 <p>{{countObservable | async}}</p>
+<h2>i18n</h2>
+<p>{{cats.length | i18nPlural: catMapping}}</p>
+<p>{{ lang | i18nSelect: langMap }}</p>
+
