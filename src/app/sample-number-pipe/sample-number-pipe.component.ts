@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Observable } from 'rxjs/Observable';
+import { Observer } from 'rxjs/Observer';
 @Component({
   selector: 'app-sample-number-pipe',
   templateUrl: './sample-number-pipe.component.html',
   styleUrls: ['./sample-number-pipe.component.css']
 })
 export class SampleNumberPipeComponent implements OnInit {
+  countObservable: Observable<number>;
+  i = 0;
   pi: number = 3.141;
   e: number = 2.718281828459045;
   public euro = 0;
@@ -34,7 +37,12 @@ export class SampleNumberPipeComponent implements OnInit {
     ]
   }
 
-  constructor() { }
+  constructor() {
+    this.countObservable = new Observable<number>((observer: Observer<number>) => {
+      this.i = 0;
+      setInterval(() => observer.next(this.i++), 1000);
+    });
+  }
 
   ngOnInit() {
     this.euro = 100000.12;
