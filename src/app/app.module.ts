@@ -9,7 +9,8 @@ import { USE_VALUE_CONST } from './use-value-const';
 import { SimpleDiService } from './simple-di.service';
 import { UseFactoryService } from './use-factory.service';
 import { useFactoryFn } from './use-factory-fn';
-import {UseExistingDiComponent} from './use-existing-di/use-existing-di.component';
+import { UseExistingDiComponent } from './use-existing-di/use-existing-di.component';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -63,6 +64,8 @@ import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulate
 import { HostSelectorComponent } from './host-selector/host-selector.component';
 import { SimpleDiComponent } from './simple-di/simple-di.component';
 import { ObservableComponent } from './observable/observable.component';
+import { JsonpSampleComponent } from './jsonp-sample/jsonp-sample.component';
+import { HttpFilterSampleComponent } from './http-filter-sample/http-filter-sample.component';
 
 
 @NgModule({
@@ -132,12 +135,16 @@ import { ObservableComponent } from './observable/observable.component';
     HostSelectorComponent,
     SimpleDiComponent,
     UseExistingDiComponent,
-    ObservableComponent
+    ObservableComponent,
+    JsonpSampleComponent,
+    HttpFilterSampleComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [CalcService, SampleService,
     {
