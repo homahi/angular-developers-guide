@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-style.component.css']
 })
 export class NgStyleComponent implements OnInit {
-  style1={
-    'font-weight':'bold',
-    'text-decoration':'line-through'
-  }
+  style1= {
+    'font-weight': 'bold',
+    'text-decoration': 'line-through'
+  };
   constructor() { }
 
   ngOnInit() {

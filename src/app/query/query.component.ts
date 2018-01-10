@@ -42,7 +42,7 @@ export class QueryComponent implements OnInit {
       this.animState = 'on';
       return;
     }
-    this.animState='off';
+    this.animState = 'off';
   }
 
 }

@@ -12,7 +12,7 @@ export class NgForComponent implements OnInit {
     'NgIf',
     'NgPlural',
     'NgSwitch',
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

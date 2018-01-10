@@ -26,6 +26,6 @@ export class Transition2Component implements OnInit {
     this.title = 'transition2';
   }
 
-  click() { this.visible = !this.visible }
+  click() { this.visible = !this.visible; }
 
 }

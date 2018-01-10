@@ -20,7 +20,7 @@ export class ObservableComponent implements OnInit {
       setTimeout(() => {
         observer.next('r');
         observer.complete();
-      }, 1000)
+      }, 1000);
     });
     observable.subscribe({
       next: (str) => {
@@ -64,6 +64,6 @@ export class ObservableComponent implements OnInit {
     const promiseFromObservable = Rx.Observable.of('Angular').toPromise();
     promise.then((x) => {
       console.log(x);
-    })
+    });
   }
 }

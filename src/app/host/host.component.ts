@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResizeComponent implements OnInit{
   width: number;
-  height:number;
+  height: number;
 
   ngOnInit(){
     this.setWindowSize();

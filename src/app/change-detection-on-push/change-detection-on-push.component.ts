@@ -2,7 +2,7 @@ import { Input, ChangeDetectionStrategy, Component, OnInit } from '@angular/core
 
 interface Message {
   text: string;
-};
+}
 
 @Component({
   selector: 'app-change-detection-on-push-child',

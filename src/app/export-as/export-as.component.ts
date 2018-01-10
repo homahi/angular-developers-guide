@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-export-as-counter',
-  template:'<p>{{count}}</p>',
+  template: '<p>{{count}}</p>',
   exportAs: 'counter'
     })
 export class ExportAsCounterComponent{
-  count:number;
+  count: number;
 
   constructor(){}
 
@@ -21,7 +21,7 @@ export class ExportAsCounterComponent{
   decrement(){
     this.count--;
   }
-};
+}
 
 @Component({
   selector: 'app-export-as',

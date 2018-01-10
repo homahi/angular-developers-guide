@@ -9,7 +9,7 @@ import { CalcService } from '../calc.service';
 export class SumComponent implements OnInit {
   model1 = 0;
   model2 = 0;
-  result : number;
+  result: number;
 
   constructor(private calcService: CalcService) { }
 

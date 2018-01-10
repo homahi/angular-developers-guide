@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(public translate: TranslateService) {
     translate.setDefaultLang('ja');
   }
-  changeLang(lang:string){
+  changeLang(lang: string){
     this.translate.use(lang);
   }
   clickButton($event) {

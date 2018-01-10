@@ -30,7 +30,7 @@ export class StaggerComponent implements OnInit {
     this.title = 'stagger';
   }
   clickShow() {
-    this.items = ['item1', 'item2', 'item3']
+    this.items = ['item1', 'item2', 'item3'];
   }
   clickRemove() {
     this.items = [];

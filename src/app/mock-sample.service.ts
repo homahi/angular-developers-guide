@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class MockSampleService {
   message: string;
   constructor() {
-    this.message = 'This is mock service.'
+    this.message = 'This is mock service.';
   }
 
 }

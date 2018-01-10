@@ -35,7 +35,7 @@ export class InputsComponent implements OnInit {
 
   ngOnInit() {
     setInterval(() => {
-      this.count++
+      this.count++;
     }, 1000);
   }
 

@@ -12,13 +12,13 @@ export class SampleNumberPipeComponent implements OnInit {
   cats: string[] = ['三毛猫'];
   lang = 'ja';
   catMapping: { [k: string]: string } = { '=0': '0 cats.', '=1': 'One cat.', 'other': '# cats.' };
-  langMap: any = { 'fi': 'Kissa', 'ja': '猫', 'other': 'Cat' }
+  langMap: any = { 'fi': 'Kissa', 'ja': '猫', 'other': 'Cat' };
   countObservable: Observable<number>;
   i = 0;
-  pi: number = 3.141;
-  e: number = 2.718281828459045;
+  pi = 3.141;
+  e = 2.718281828459045;
   euro = 0;
-  str: string = ';'
+  str = ';';
   date: Date = new Date('2014-04-01');
   a = 0.2577711;
   b = 100.34959999;
@@ -41,7 +41,7 @@ export class SampleNumberPipeComponent implements OnInit {
         'population': 6028315
       }
     ]
-  }
+  };
 
   constructor() {
     this.timeObservable = new Observable<string>((observer: Observer<string>) => {

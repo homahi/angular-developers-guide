@@ -5,7 +5,7 @@ import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/concat';
 import 'rxjs/add/operator/filter';
 export interface IPerson {
-  name: string,
+  name: string;
   age: number;
 }
 
@@ -27,7 +27,7 @@ export class HttpFilterSampleComponent implements OnInit {
     const options = {
       params: params,
       headers: headers
-    }
+    };
     this.http.get<IPerson[]>('./assets/filter.json', options)
       .flatMap((persons: IPerson[]) => persons)
       .filter((person: IPerson) => person.age >= 18)

@@ -5,7 +5,7 @@ export class SampleService {
   message: string;
 
   constructor() {
-    this.message = 'This is sample service'
+    this.message = 'This is sample service';
   }
 
 }
