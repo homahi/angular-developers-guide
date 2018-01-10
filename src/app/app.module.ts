@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { NgModule } from '@angular/core';
 import { SampleService } from './sample.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -148,7 +149,14 @@ import { KanaPipe } from './kana.pipe';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: Translateloader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [CalcService, SampleService,
     {
