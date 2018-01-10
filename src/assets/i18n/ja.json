@@ -1,6 +1,7 @@
 {
   "HOME": {
     "HELLO": "こんにちは",
-    "WORLD": "世界"
+    "WORLD": "世界",
+    "HELLO_VALUE":"こんにちは{{value}}"
   }
 }

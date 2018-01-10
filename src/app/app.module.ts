@@ -70,6 +70,9 @@ import { JsonpSampleComponent } from './jsonp-sample/jsonp-sample.component';
 import { HttpFilterSampleComponent } from './http-filter-sample/http-filter-sample.component';
 import { SampleNumberPipeComponent } from './sample-number-pipe/sample-number-pipe.component';
 import { KanaPipe } from './kana.pipe';
+import { InlineComponent } from './inline/inline.component';
+import { NospecComponent } from './nospec/nospec.component';
+import { AddDirectiveService } from './add-directive.service';
 
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -147,7 +150,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     JsonpSampleComponent,
     HttpFilterSampleComponent,
     SampleNumberPipeComponent,
-    KanaPipe
+    KanaPipe,
+    InlineComponent,
+    NospecComponent
   ],
   imports: [
     FormsModule,
@@ -172,7 +177,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     DummyService,
     SimpleDiService,
     {
-      provide: UseFactoryService, useFactory: useFactoryFn, deps: [SimpleDiService, DummyService]
+      provide: UseFactoryService, useFactory: useFactoryFn, deps: [SimpleDiService, DummyService], providers: [AddDirectiveService]
     }
   ],
   bootstrap: [AppComponent]
