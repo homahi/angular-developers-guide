@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { NgModule } from '@angular/core';
 import { SampleService } from './sample.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,7 +12,7 @@ import { SimpleDiService } from './simple-di.service';
 import { UseFactoryService } from './use-factory.service';
 import { useFactoryFn } from './use-factory-fn';
 import { UseExistingDiComponent } from './use-existing-di/use-existing-di.component';
-import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HttpClientJsonpModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -71,6 +72,10 @@ import { SampleNumberPipeComponent } from './sample-number-pipe/sample-number-pi
 import { KanaPipe } from './kana.pipe';
 
 
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -152,7 +157,7 @@ import { KanaPipe } from './kana.pipe';
     HttpClientJsonpModule,
     TranslateModule.forRoot({
       loader: {
-        provide: Translateloader,
+        provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }

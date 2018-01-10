@@ -143,3 +143,7 @@
 <app-http-filter-sample></app-http-filter-sample>
 <h2>6-1-1:パイプ</h2>
 <app-sample-number-pipe></app-sample-number-pipe>
+<h2>11-3-4:translateパイプを使った翻訳</h2>
+<p>{{"HOME.HELLO" | translate}} {{ "HOME.WORLD" | translate }}</p>
+<button (click)="changeLang('en')">en</button>
+<button (click)="changeLang('ja')">ja</button>

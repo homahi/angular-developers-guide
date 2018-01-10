@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,12 @@ export class AppComponent {
   d = 'Angular!';
   e = true;
 
+  constructor(public translate: TranslateService) {
+    translate.setDefaultLang('ja');
+  }
+  changeLang(lang:string){
+    this.translate.use(lang);
+  }
   clickButton($event) {
     console.log($event);
   }
