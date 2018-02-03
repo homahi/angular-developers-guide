@@ -175,10 +175,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     UseExistingService,
     { provide: DummyService, useExisting: UseExistingService },
     DummyService,
-    SimpleDiService,
-    {
-      provide: UseFactoryService, useFactory: useFactoryFn, deps: [SimpleDiService, DummyService], providers: [AddDirectiveService]
-    }
+    SimpleDiService
   ],
   bootstrap: [AppComponent]
 })
